@@ -1,0 +1,33 @@
+# Ignorar todos los archivos .env en cualquier subcarpeta de back-tif
+back-tif/**/*.env
+
+# Ignorar la carpeta dataset y todo su contenido
+gitignore
+back-tif/dataset/
+
+back-tif/env.example
+back-tif/.env
+back-tif/.venv
+back-tif/__pycache__
+back-tif/seed_database.py
+back-tif/FCOS/fcos_crops/
+
+
+# Ignorar la carpeta models con archivos de modelos entrenados
+back-tif/models/
+
+# Ignorar archivos pesados de DAN pero mantener el código fuente
+DAN/models/
+DAN/__pycache__/
+DAN/*.jpg
+DAN/*.txt
+DAN/debug_*.jpg
+DAN/crop_*.jpg
+
+# Ignorar archivos pesados de back-tif/DAN pero mantener el código fuente
+back-tif/DAN/models/
+back-tif/DAN/__pycache__/
+back-tif/DAN/*.jpg
+back-tif/DAN/*.txt
+back-tif/DAN/debug_*.jpg
+back-tif/DAN/crop_*.jpg
